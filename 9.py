@@ -11,10 +11,13 @@ def generateFIO(amount:int) -> list:
     print(fio_list)
     return fio_list
 
+def writeToXlsx(write_list: list):
+    wb = openpyxl.load_workbook('table.xlsx')
 
 def main():
     input_number = int(input('Enter a number - '))
     generateFIO(input_number)
+    writeToXlsx(generateFIO(input_number))
 
 if __name__ == "__main__":
     main()
