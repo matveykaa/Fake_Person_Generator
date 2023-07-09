@@ -48,7 +48,6 @@ def writeToXlsx(write_list: list, ans: str):
             sheet.cell(row=last_row + i + 1, column=4).value = fio[2]
     wb.save('people.xlsx')
 
-
 def main():
     input_number = int(input('Enter a number: '))
     answer = input('Do you want to add FIOs to existing file? (N - no, Y - yes): ')
