@@ -18,13 +18,13 @@ def clearWorksheet(sheet):
             cell.value = None
 
 def writeToXlsx(write_list: list, ans: str):
-    if ans == 'N':
+    if ans == 'N' or ans == 'n':
         wb = load_workbook('people.xlsx')
         sheet = wb.active
         clearWorksheet(sheet)
         sheet.title = "People"
         last_row = 1
-    elif ans == 'Y':
+    elif ans == 'Y' or ans == 'y':
         try:
             wb = load_workbook('people.xlsx')
             sheet = wb.active
