@@ -54,5 +54,6 @@ def main():
     fio_list = generateFIO(input_number)
     writeToXlsx(fio_list, answer)
 
+
 if __name__ == "__main__":
     main()
